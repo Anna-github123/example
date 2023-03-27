@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLocation</title>
+
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/geolocation_favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--header class statrt-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid">
+                <a href="../html/home.html">
+                    <img src="../images/geolocation_logo.png" class="logo"> <!--add logo image in header-->
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/home.html">HOME</a>
+                        </li>
+                        <span class="navbar-separator">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/aboutus.html">ABOUT US</a>
+                        </li>
+                        <span class="navbar-separator">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/contactus.html">CONTACT US</a>
+                        </li>
+                        <span class="navbar-separator">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/comparelocations.html">COMPARE LOCATION</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <video class="background-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="..//videos/geoloaction_bgvideo.mp4" type="video/mp4">
+        </video>
+
+        <!--add text on the background video-->
+        <div class="bg-video-text">
+            <p>GEOLOCATION</p>
+            <h1>ADVENTURE<br>BEGINS</h1>
+        </div>
+        <div class="bg-border"></div>
+    </header>
+    <!--header class ends-->
+
+    <section>
+        <div class="description-container">
+            <div class="row">
+                <div class="col-9">
+                    <h1>GeoLocation</h1>
+                    <h2>Help Us Serve You Better</h2>
+                    <p>
+                        Welcome to our website, where you can explore the world's capital cities and learn about
+                        their
+                        cost
+                        of living. Our platform is designed to help you locate and discover the diverse range of
+                        cities
+                        around the globe while also providing you with valuable information about the cost of living
+                        in
+                        each
+                        capital. Whether you're planning a trip or considering relocating, our website offers a
+                        comprehensive resource for anyone interested in exploring the world and comparing the costs
+                        of
+                        living in different cities. So join us on a journey to discover the world's capitals and
+                        unique
+                        characteristics!
+                    </p>
+                </div>
+                <div class="col-6">
+                    <div class="line"></div>
+                    <img src="../images/geolocation_home.jpg" class="rounded mx-auto d-block" alt="GeoLocation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values" id="values">
+        <div class="topic"> <a>Our Values</a> </div>
+        <div class="flex-container">
+            <div><span class="fa fa-star checked"></span><a>Engaging</a></div>
+            <div><span class="fa fa-star checked"></span><a>Proximity-based</a></div>
+            <div><span class="fa fa-star checked"></span><a>Proactive</a></div>
+            <div><span class="fa fa-star checked"></span><a>Accessible</a></div>
+            <div><span class="fa fa-star checked"></span><a>Reliable</a></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="country-inp" placeholder="Enter a country name here...">
+                <button id="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+            <div id="result"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a id="nigeria" href="../html/home.html" style="text-decoration:none">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/geolocation_nigeria.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Federal Republic of Nigeria</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a id="" href="" style="text-decoration:none">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/geolocation_algeria.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">People's Democratic Republic of Algeria</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="" style="text-decoration:none">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/geolocation_kenya.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Republic of Kenya</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="" style="text-decoration:none">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/geolocation_mauritius.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Republic of Mauritius</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section begins here-->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <a href="../html/home.html">
+                        <img src="../images/geolocation_logo.png" class="GeoLocation logo img-fluid">
+                        <!--added logo-->
+                    </a>
+                    <p>Copyright &#169; 2023 GeoLocation<br> All Rights Reserved </p>
+                    <ul class="footer-ul">
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-f" aria-hidden="true"
+                                    style="color:white;"></i></a></li>
+                        <li><a href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"
+                                    style="color:white;"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"
+                                    style="color:white;"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col-2">
+                    <a href="tel: +230 5589 6705"><i class="fa fa-phone fa-5x" aria-hidden="true"
+                            style="color:white;"></i></a>
+                    <h3>Phone Number</h3>
+                    <p class="text-center">+230 5589 6705</p>
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col-2">
+                    <a href="tel: +230 5589 6705"><i class="fa fa-map-marker fa-5x" aria-hidden="true"
+                            style="color:white;"></i></a>
+                    <h3>ADDRESS</h3>
+                    <address>50 Parkview Lane, Port Louis Mauritius</address>
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col-2">
+                    <a href="https://mail.google.com/mail/"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"
+                            style="color:white;"></i></a>
+                    <h3>Email</h3>
+                    <p>geolocation@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--footer section ends-->
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
